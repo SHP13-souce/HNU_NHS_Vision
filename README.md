@@ -1,4 +1,4 @@
-HNU_NHS_Vision Git使用说明（25级专属）
+HNU_NHS_Vision Git使用说明
 
 本文档为海南大学南海鲨战队（HNU_NHS）视觉组 Git 仓库使用规范，适用于25级所有参与视觉组开发的同学及各组负责人，严格遵循本说明操作，确保代码仓库整洁、协作高效。
 
@@ -152,7 +152,7 @@ git checkout -b feature/detection-张三-装甲板识别算法
 
 1. 提交代码：点击「消息」输入框右侧的「✅」按钮，或按 Ctrl+Enter，完成本地提交。
 
-2. 推送代码到远程：提交完成后，点击 VSCode 左下角的「同步」按钮，或点击「源代码管理」面板中的「推送」按钮，将本地个人分支推送到远程仓库（首次推送会提示“推送分支到远程”，点击确认即可）。
+2. 推送代码到远程：提交完成后，点击 VSCode 左下角的「同步」按钮，或点击「源代码管理」面板中的「推送」按钮，将本地个人分支推送到远程仓库（首次推送会提示“推送分支到远程”，点击确认即可）
 
 终端命令备用：
 
@@ -169,16 +169,16 @@ git push
 
 当个人分支上的功能开发完成、测试通过后，需提交验收申请，由本组负责人验收代码，步骤如下：
 
-1. 打开浏览器，访问仓库地址：https://github.com/xq395/HNU_NHS_Vision.git。
+1. 打开浏览器，访问仓库地址：https://github.com/xq395/HNU_NHS_Vision.git
 
-2. 点击页面上方的「Pull requests」（PR）→「New pull request」。
+2. 点击页面上方的「Pull requests」（PR）→「New pull request」
 
 3. 选择源分支和目标分支：
         
 
   - 源分支（Compare）：选择自己的个人分支（如 feature/detection-张三-装甲板识别算法）。
 
-  - 目标分支（Base）：选择自己组的开发分支（识别组选 dev/detection，解算组选 dev/solve，通信组选 dev/communication）。
+  - 目标分支（Base）：选择自己组的开发分支（识别组选 dev/detection，解算组选 dev/solve，通信组选 dev/communication）
 
 4. 点击「Create pull request」，进入PR编辑页面。
 
@@ -270,7 +270,7 @@ git pull
 
 - 若当前修改的代码无需保留，执行：git checkout -- .（放弃本地修改），再切换分支。
 
-- 若当前修改的代码需要保留，先提交本地修改（git add . + git commit -m "临时提交"），再切换分支。
+- 若当前修改的代码需要保留，先提交本地修改（git add . + git commit -m "临时提交"），再切换分支
 
 3. 推送代码失败
 
@@ -280,7 +280,7 @@ git pull
 
 - 先拉取远程对应分支的最新代码，解决冲突后再推送：git pull origin 个人分支名。
 
-- 若提示“fatal: remote origin already exists”，说明远程仓库关联错误，执行：git remote remove origin，再重新关联仓库（git remote add origin 仓库地址）。
+- 若提示“fatal: remote origin already exists”，说明远程仓库关联错误，执行：git remote remove origin，再重新关联仓库（git remote add origin 仓库地址）
 
 4. 代码冲突
 
@@ -312,7 +312,7 @@ git push --force origin 个人分支名
 
 - 开发前必须拉取本组开发分支的最新代码，避免代码冲突。
 
-- 禁止提交无用文件（如 .vscode 配置文件、编译产物、缓存文件等），.gitignore 已过滤此类文件，不要修改 .gitignore。
+- 禁止提交无用文件（如 .vscode 配置文件、编译产物、缓存文件等），.gitignore 已过滤此类文件，不要修改 .gitignore
 
 - 代码格式整洁，命名规范（变量、函数、类名清晰，避免乱命名），便于后续维护和验收。
 
